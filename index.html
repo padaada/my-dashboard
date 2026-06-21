@@ -103,24 +103,6 @@
   }
   .subtitle{font-size:13px;color:var(--ink-soft);margin:0;line-height:1.5;}
 
-  .top-right{display:flex;flex-direction:column;align-items:flex-end;gap:12px;}
-  .search-box{
-    display:flex;align-items:center;gap:8px;
-    background:#F4F7FC;border:1px solid var(--card-border);
-    border-radius:12px;padding:9px 14px;min-width:210px;
-  }
-  .search-box input{
-    border:none;background:transparent;outline:none;
-    font-family:inherit;font-size:13px;color:var(--ink);width:100%;
-  }
-  .search-box svg{width:15px;height:15px;color:var(--ink-faint);flex-shrink:0;}
-
-  .legend-row{display:flex;gap:16px;flex-wrap:wrap;}
-  .legend-item{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--ink-soft);font-weight:500;}
-  .dot{width:9px;height:9px;border-radius:50%;display:inline-block;}
-  .dot.peach{background:var(--peach-deep);}
-  .dot.blue{background:var(--blue-deep);}
-
   .stat-strip{
     display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:22px;
   }
@@ -294,7 +276,6 @@
     .main{padding:22px 18px;}
     .grid{grid-template-columns:1fr;}
     .topbar{flex-direction:column;}
-    .top-right{align-items:flex-start;}
   }
 
   @media (prefers-reduced-motion:reduce){
@@ -349,16 +330,6 @@
           <p class="eyebrow">KCI 학술논문 데이터 리포트</p>
           <h1>장자(莊子) 철학 연구 동향 대시보드</h1>
           <p class="subtitle">철학 관련 논문 1,014건의 제목 키워드 분석 — 현대 사회 문제와 장자적 대안의 대립 구도</p>
-        </div>
-      </div>
-      <div class="top-right">
-        <div class="search-box">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3" stroke-linecap="round"/></svg>
-          <input type="text" placeholder="키워드 검색 (예: 소요유, 제물론)" />
-        </div>
-        <div class="legend-row">
-          <span class="legend-item"><span class="dot peach"></span>현대 사회 문제</span>
-          <span class="legend-item"><span class="dot blue"></span>장자 철학 대안</span>
         </div>
       </div>
     </div>
